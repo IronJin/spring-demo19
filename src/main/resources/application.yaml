@@ -1,0 +1,23 @@
+springdoc:
+ swagger-ui:
+  path: /swagger-ui.html
+  groups-order: DESC
+  operationsSorter: method
+  disable-swagger-default-url: true
+  display-request-duration: true
+ api-docs:
+  path: /api-docs
+ show-actuator: true
+ default-consumes-media-type: application/json
+ default-produces-media-type: application/json
+ paths-to-match:
+  - /**
+
+spring.datasource:
+ url: "jdbc:mariadb://165.192.77.187:3306/demo"
+ username: "demoUser"
+ password:
+ driver-class-name: org.mariadb.jdbc.Driver
+
+spring.jpa.hibernate.naming:
+ physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
